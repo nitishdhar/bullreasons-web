@@ -1,0 +1,2 @@
+// Reasons
+export const GET_REASONS_SUCCESS = 'GET_REASONS_SUCCESS';
