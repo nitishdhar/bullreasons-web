@@ -1,11 +1,11 @@
 import { combineReducers } from 'redux';
 
 // Reducers
-import reasonReducer from './reason-reducer';
+import reasons from './reason-reducer';
 
 // Combine Reducers
 var reducers = combineReducers({
-    reasonState: reasonReducer
+    reasons
 });
 
 export default reducers;
