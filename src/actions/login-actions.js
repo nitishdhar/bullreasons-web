@@ -1,5 +1,4 @@
 import * as types from '../actions/action-types';
-import axios from 'axios';
 
 export function fetchAuth0Token(auth0lock) {
   return function(dispatch) {

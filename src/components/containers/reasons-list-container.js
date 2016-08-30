@@ -33,7 +33,7 @@ const ReasonsListContainer = React.createClass({
         return <span>Fetching Tweets</span>
       }
       if (this.props.error) {
-        return <span>{this.props.error.toString()}</span>
+        return <span>{this.props.error.statusText.toString()}</span>
       }
       return (
         <div>
