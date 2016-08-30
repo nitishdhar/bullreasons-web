@@ -5,7 +5,6 @@ import { Navbar, Nav } from 'react-bootstrap/lib';
 import * as loginActions from '../../actions/login-actions';
 import * as config from '../../config';
 
-
 const mapStateToProps = function(store) {
   return {
     auth0_authenticated: store.login.auth0_authenticated
