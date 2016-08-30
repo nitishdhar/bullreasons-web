@@ -15,7 +15,7 @@ const mapStateToProps = function(store) {
 
 const ReasonsListContainer = React.createClass({
 
-  componentWillMount: function() {
+  componentDidMount: function() {
     if (this.props.auth0_authenticated) {
       this.props.dispatch(reasonActions.fetchReasons(this.props.auth0_token));
     }

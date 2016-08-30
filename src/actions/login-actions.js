@@ -9,7 +9,7 @@ export function fetchAuth0Token(auth0lock) {
     var auth0_token = localStorage.getItem('auth0_token');
     if (authHash) {
       if (authHash.id_token) {
-        auth0_token = authHash.id_token
+        auth0_token = authHash.id_token;
         localStorage.setItem('auth0_token', authHash.id_token);
         dispatch({type: types.LOGIN_FULFILLED, payload: authHash.id_token});
       }
